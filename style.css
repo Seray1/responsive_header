@@ -28,6 +28,7 @@ header img{
     align-self: center;
     display: flex;
     gap: 20px;
+    text-align: center;
 }
 header div a::before{
     content: "";
@@ -65,12 +66,22 @@ header div a:hover::before{
 @media  (max-width: 768px) {
  /* for tablets */
  .d2{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    background-color: brown;
+    width: 100%;
     
+}
+.d2 span{
+    display: none;
 }
 #menuBtn{
     display: block;
     color: red;
 }
+
 }
 
