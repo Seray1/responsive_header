@@ -52,6 +52,8 @@ header div a:hover::before{
 }
 
 
+
+
 @media (max-width: 480px) {
     /* for phones */
     .d2{
@@ -71,8 +73,12 @@ header div a:hover::before{
     position: fixed;
     top: 75px;
     left: 0;
-    background-color: brown;
+    background-color: rgb(47, 47, 110);
     width: 100%;
+    padding: 20px;
+    transform: translate(-100%);
+    transition: 1s;
+    z-index: 9999;
     
 }
 .d2 span{
@@ -80,8 +86,14 @@ header div a:hover::before{
 }
 #menuBtn{
     display: block;
-    color: red;
+    color: white;
+}
+#menu{
+    z-index: 999;
 }
 
+#menu:checked ~ .d2{
+    transform: translate(0);
+}
 }
 
